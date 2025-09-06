@@ -2,8 +2,8 @@ from data_loader import load_generated_answers, load_knowledge
 from entailment_checker import EntailmentChecker
 
 # Đường dẫn file
-generated_file = "/content/drive/MyDrive/submit.csv"
-knowledge_file = "/content/drive/MyDrive/vihallu-warmup.csv"
+generated_file = ".../submit.csv"
+knowledge_file = ".../vihallu-warmup.csv"
 
 # Load dữ liệu
 generated_answers = load_generated_answers(generated_file)
@@ -20,3 +20,4 @@ print(df_results.head())
 # Lọc các dòng entailed
 entailed_rows = df_results[df_results['Entailed'] == True]
 print(entailed_rows.head())
+
